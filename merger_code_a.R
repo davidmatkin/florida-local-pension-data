@@ -310,7 +310,7 @@ blrs_a <- blrs_a %>%
   group_by(plan_sponsor_clean, plan_type_a, val_date_a) %>%
   filter(report_year_a == max(report_year_a))
 
-    
+save(blrs_a, file="blrs_a.RData")      
 
 
 
