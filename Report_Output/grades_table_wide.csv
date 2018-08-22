@@ -1,0 +1,359 @@
+"plan_sponsor_clean","plan_type_clean","2005","2006","2007","2008","2009","2010","2011","2012","2013","2014","2015","2016"
+"ALTAMONTE SPRINGS","G",NA,NA,"A",NA,"A","A","A","A","A","A","A","A"
+"ALTAMONTE SPRINGS","P",NA,NA,NA,NA,"C",NA,"B","A","A",NA,"A",NA
+"APOPKA","F","A","A","A",NA,"A","A","B",NA,"A",NA,"A",NA
+"APOPKA","G","B","A","A",NA,"A",NA,"C",NA,"A",NA,"B",NA
+"APOPKA","P","B","B","B",NA,"B","B","C",NA,"A","A","A",NA
+"ARCADIA","G",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"B"
+"ARCADIA","PF","A","B","B","B","B","C","D","D","C","C","B","B"
+"ATLANTIC BEACH","G","B",NA,"B","B","B","C","C","C","C","C","C",NA
+"ATLANTIC BEACH","P","C",NA,"C","D","D","D","D","D","D","C","C","C"
+"ATLANTIS","P","A","A",NA,"C",NA,NA,"D",NA,NA,"C",NA,NA
+"AUBURNDALE","F",NA,NA,NA,NA,NA,NA,"D","C","C","C","C","C"
+"AUBURNDALE","G",NA,NA,NA,NA,NA,"C","D","D","D",NA,"D","D"
+"AVENTURA","P",NA,NA,"B",NA,"B",NA,NA,"A",NA,"A",NA,"A"
+"AVON PARK","F","A","B","A","B","C","C","D","C","C",NA,"C","C"
+"AVON PARK","P",NA,NA,"A","A","A","B","B",NA,"A",NA,"A","A"
+"BAL HARBOUR VILLAGE","G",NA,NA,NA,"C",NA,"C",NA,"C",NA,"C","C",NA
+"BAL HARBOUR VILLAGE","P","D","F","F",NA,"F","F","F","D","D","D","D","D"
+"BARTOW","G",NA,"A",NA,"C",NA,"D","D","C","C","C","C","C"
+"BARTOW","P",NA,NA,NA,NA,NA,"D","D","D","C",NA,"C","C"
+"BAY HARBOR ISLANDS","G",NA,NA,NA,NA,NA,NA,"B",NA,"A","A","A",NA
+"BAY HARBOR ISLANDS","P",NA,NA,NA,NA,NA,NA,"C",NA,"A","A","A",NA
+"BAY MEDICAL CENTER","G",NA,NA,NA,NA,NA,"A","A",NA,"C","C","C","D"
+"BELLE GLADE","F","A",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"BELLE GLADE","G","A","A",NA,"A","A","A",NA,NA,NA,NA,NA,NA
+"BELLE GLADE","P","A",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"BELLEVIEW","P",NA,NA,"B","B","B","C","C","C","B",NA,"A","A"
+"BOCA RATON","G",NA,NA,NA,"A","A","A","A","A","A","A","A",NA
+"BOCA RATON","PF",NA,NA,NA,"B",NA,"D","D","D","D","D","D","D"
+"BOCA RATON EXECUTIVE","G",NA,NA,NA,"C",NA,"C","F","C","C","C","C",NA
+"BOYNTON BEACH","F",NA,"D",NA,"D","D","F","F","D","C","C","C","C"
+"BOYNTON BEACH","G","B",NA,NA,"C","C",NA,"C","C","C","B","B","B"
+"BOYNTON BEACH","P",NA,NA,NA,"D","F","F","F","C","C","C","C","C"
+"BRADENTON","F","B","C","B","D","D","D","D","D","D","C","B","B"
+"BRADENTON","P","B","B","B","B","B","C","C","D","C","B","B","B"
+"BROOKSVILLE","F","C","B","C","C","C","D","D","D","D","C","B","B"
+"BUNNELL","F","A",NA,NA,"A",NA,"A",NA,NA,NA,NA,NA,NA
+"BUSHNELL","G",NA,"A",NA,"B","B",NA,"B","A","A","A","A","A"
+"CAPE CORAL","F","C","C","C","D","D","F","F","D","D","C","C","C"
+"CAPE CORAL","G","B","B",NA,"C","C","F","F","C","C","C","C","C"
+"CAPE CORAL","P","C",NA,"B","C","D","D","F","C","B","B","B","B"
+"CLEARWATER","F",NA,NA,NA,NA,NA,NA,NA,NA,NA,"A",NA,NA
+"CLEARWATER","GPF",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"A"
+"CLEWISTON","G",NA,NA,NA,NA,NA,NA,NA,NA,"C","C","C","C"
+"COCOA","F",NA,"D",NA,"F",NA,"F","F","F",NA,"D","D","D"
+"COCOA","G","C","C",NA,"C","D","D","D","D","D","C","C","C"
+"COCOA","P",NA,NA,NA,"B","B","C","C","B","B","B","A","B"
+"COCOA BEACH","F","F","F","F","F","F","F","F","D","D","D","D","C"
+"COCOA BEACH","P","D","D","D","F","F","F","F","F","D","D","D","C"
+"COOPER CITY","F","D","D","D","D",NA,NA,NA,NA,NA,NA,NA,NA
+"COOPER CITY","P",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"B"
+"COOPER CITY - MANAGEMENT","GPF",NA,NA,NA,"F",NA,NA,"D",NA,NA,"C",NA,NA
+"CORAL GABLES","GPF",NA,NA,NA,"D","F",NA,"F","D","D","C","D","D"
+"CORAL SPRINGS","F","D",NA,"C",NA,NA,"B","C","B","A","A","A",NA
+"CORAL SPRINGS","G","B","C","D","D","D","C","C","C","B","B","C","C"
+"CORAL SPRINGS","P",NA,NA,NA,NA,NA,NA,"F","D","D","D","C",NA
+"CRESTVIEW","G",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"A"
+"DADE CITY","F",NA,NA,NA,NA,NA,NA,"D","C","C",NA,"D","D"
+"DANIA BEACH","F",NA,NA,NA,"D","D",NA,"F",NA,NA,NA,NA,NA
+"DANIA BEACH","P",NA,NA,NA,"D","D",NA,NA,NA,NA,NA,NA,NA
+"DAVIE","F","C","C","C",NA,"C","D","D","D",NA,"C","C",NA
+"DAVIE","P","C",NA,"C",NA,"D","D","D","D","B","B","C","C"
+"DAYTONA BEACH","PF","B","C",NA,"C",NA,"C",NA,"C","C","C","C","C"
+"DEERFIELD BEACH","F",NA,"A","A","A","A","C","C",NA,NA,"C","C",NA
+"DEERFIELD BEACH","G",NA,NA,NA,NA,NA,NA,"B","B",NA,"B","B",NA
+"DEERFIELD BEACH","P",NA,"B",NA,"C",NA,"D","D",NA,"D",NA,"D","D"
+"DELAND","F",NA,NA,"A",NA,"B","C","C","B","B","B","B","C"
+"DELAND","G","A",NA,NA,"B","B","C","C","B","B","B","B",NA
+"DELAND","P","A",NA,"B","B",NA,"C","C","C","C","C","C",NA
+"DELRAY BEACH","F",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"D"
+"DELRAY BEACH","G",NA,NA,NA,NA,NA,"A","A","A","A","A","A","A"
+"DELRAY BEACH","P",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"D"
+"DELRAY BEACH","PF","D","D","C",NA,"D","F","F","D","D","D","D",NA
+"DELTONA","F",NA,NA,NA,"B","C","C","C","C","C","C","C","D"
+"DUNEDIN","F","A","A",NA,"A","B","B","B","A","A","A","A","A"
+"EDGEWATER","F","A",NA,"A","A","A","B","C","A","A","A","A","A"
+"EDGEWATER","G",NA,NA,NA,NA,NA,NA,NA,"D","D","D","D",NA
+"EDGEWATER","P",NA,NA,NA,NA,NA,NA,NA,NA,"C","C","C","C"
+"EUSTIS","F","B","B","B","B","D","D","D",NA,"D","D","D","D"
+"EUSTIS","P",NA,"D","D",NA,"D","D",NA,NA,"D","D","D","D"
+"FERNANDINA BEACH","G","B","B",NA,"B","C","D","D","F","D",NA,"D","C"
+"FERNANDINA BEACH","PF","C","C",NA,"D","D","F","F","F","D","D","D","D"
+"FLAGLER BEACH","P",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"A","A"
+"FLORIDA CITY - ELECTED","G",NA,NA,NA,NA,NA,NA,NA,"F",NA,"D",NA,NA
+"FORT LAUDERDALE","G",NA,NA,NA,"C","C",NA,"F","A","A",NA,"A","A"
+"FORT LAUDERDALE","PF",NA,NA,NA,NA,"D",NA,NA,"C","A","A","A",NA
+"FORT MYERS","F","D","D","D","F","F","F","F","F","D","D","D","D"
+"FORT MYERS","G","C",NA,"C","F","F","F","F","F","D","D","F","D"
+"FORT MYERS","P","C",NA,"D","F","F","F","F","F","F",NA,"D","C"
+"FORT PIERCE","G",NA,NA,NA,NA,"A","A","B","A","A","A","A",NA
+"FORT PIERCE","P",NA,NA,NA,NA,"A","A","A","A","A","A","A",NA
+"FORT PIERCE SUPP","P",NA,"A","A",NA,"A","A","A","A","A","A",NA,"A"
+"FORT WALTON BEACH","F","B","B","B","D","D","F","F","D","D","D","D","D"
+"FORT WALTON BEACH","G",NA,NA,NA,NA,"A","C","C",NA,"B","B","B","C"
+"FORT WALTON BEACH","P","B","B","B","C","D","D","D","D","D","C","D",NA
+"FROSTPROOF","P","B","B",NA,"B","C","D","D","D","C","C","C","C"
+"GAINESVILLE","G",NA,NA,"A",NA,"B","B",NA,"B","B","C","C",NA
+"GAINESVILLE","PF","A",NA,NA,"A",NA,"B",NA,"C",NA,"B",NA,"B"
+"GAINESVILLE - DISABILITY","G",NA,NA,"A",NA,NA,"A",NA,NA,NA,NA,NA,NA
+"GULFPORT","G",NA,NA,NA,"A","A","A","A","A","A","A","A","A"
+"HAINES CITY","F","C","C",NA,"C","C","D","D","D","C",NA,"C","C"
+"HAINES CITY","G",NA,NA,NA,"B","B","B","B","C","A","A","A","A"
+"HAINES CITY","P","B","B",NA,"B","B","B","C","C","C",NA,"B",NA
+"HALIFAX HOSPITAL","G",NA,NA,NA,NA,"C","F",NA,NA,NA,NA,NA,NA
+"HALLANDALE BEACH","PF",NA,NA,NA,NA,NA,NA,NA,"D","C","C","C","C"
+"HIALEAH","GPF",NA,NA,NA,"B","B","D",NA,"D",NA,"D","D","D"
+"HIALEAH - ELECTED","G","A",NA,"A",NA,"A",NA,"A",NA,"A",NA,"A",NA
+"HOLLY HILL","F","B",NA,NA,"C","C","C","C","C","C",NA,"C","C"
+"HOLLY HILL","P","C","C",NA,"C","C","C","D","C","C",NA,"C",NA
+"HOLLYWOOD","F",NA,"F",NA,"F",NA,"F",NA,NA,"C","C","D",NA
+"HOLLYWOOD","G","C","D","D","D",NA,"F",NA,"F",NA,"D","F","C"
+"HOLLYWOOD","P",NA,"D","D",NA,"F",NA,"F","D",NA,"D",NA,"F"
+"HOMESTEAD","F",NA,NA,NA,NA,NA,"C",NA,"C","C","C",NA,"C"
+"HOMESTEAD","G",NA,NA,"C","C",NA,"C","C",NA,"B","B",NA,"B"
+"HOMESTEAD","P","D","D",NA,NA,"D",NA,"D","D",NA,"C",NA,"C"
+"HOMESTEAD - Old Elected","G",NA,NA,NA,NA,NA,"D",NA,NA,"D","C",NA,"D"
+"INDIALANTIC","PF",NA,NA,NA,"B","C","C","C","B","A","A","A","A"
+"INDIAN HARBOUR BEACH","P","C","C","B","C","C","C","C","D",NA,"B","A","B"
+"INDIAN RIVER SHORES","G",NA,NA,NA,NA,"F",NA,"D",NA,"D","C","C","B"
+"INDIAN RIVER SHORES","PF",NA,NA,NA,NA,"C",NA,"C",NA,"B","A","B","B"
+"JACKSONVILLE","CO",NA,NA,NA,"D",NA,NA,"F",NA,NA,"D","D",NA
+"JACKSONVILLE","G",NA,NA,NA,"B",NA,NA,"C","C",NA,"C","C",NA
+"JACKSONVILLE","PF",NA,NA,NA,"F",NA,NA,"F","D","D","D","D","D"
+"JACKSONVILLE - DISABILITY","G",NA,NA,NA,NA,"A",NA,NA,"C",NA,NA,"C",NA
+"JACKSONVILLE BEACH","F","C","C",NA,NA,"C",NA,"C","C","C","A","C","C"
+"JACKSONVILLE BEACH","G","A","C","A",NA,"A",NA,"B","C","B","A","C","C"
+"JACKSONVILLE BEACH","P","A","A",NA,"B","C",NA,"C","C","B","A","A","A"
+"JUPITER","P",NA,"D",NA,"C",NA,"C","C","C","B","B","B",NA
+"KEY BISCAYNE","PF","B","B","B","B","B","B","B","C","C","A","A","A"
+"KEY WEST","G",NA,NA,"A","A",NA,"A",NA,NA,NA,NA,NA,NA
+"KEY WEST","PF","C","B","B",NA,"B",NA,"C","D","C","B","C","C"
+"KEY WEST UTILITY","G",NA,"B",NA,"B",NA,"D",NA,"D","D",NA,"D","D"
+"KISSIMMEE","F",NA,"C","C",NA,"D","D","D","D","D","C","D","D"
+"KISSIMMEE","G",NA,NA,NA,NA,"A","B","B",NA,NA,NA,NA,NA
+"KISSIMMEE","P",NA,NA,NA,"B","C","D","D","D","C","C","C","C"
+"LADY LAKE","P","A","A","A","A","A","A","A","A","A","A","A","A"
+"LAKE ALFRED","G",NA,"A",NA,"A","A","A","A","A","A","A","A","A"
+"LAKE ALFRED","P",NA,"A",NA,"A","A","A",NA,NA,NA,NA,NA,NA
+"LAKE ALFRED","PF",NA,NA,NA,NA,NA,NA,"A","A","A","A","A","A"
+"LAKE CITY","F",NA,NA,"B",NA,NA,"B",NA,"B",NA,"B","B",NA
+"LAKE CITY","G",NA,NA,NA,"C",NA,"D",NA,"D",NA,"C","D",NA
+"LAKE CITY","P",NA,"A",NA,"B","B","B","C","A","A",NA,"A","A"
+"LAKE MARY","F","B","C",NA,"C",NA,"C","C","C","A","A","A",NA
+"LAKE MARY","P","A","A","A","A","A","A","B","A","A","A","A","A"
+"LAKE PARK","P","C","C",NA,NA,NA,"D","D","D","C","C","D","D"
+"LAKE WALES","F",NA,"D","D","D","D","F","F","D","C","C","C","C"
+"LAKE WALES","P","C","A","A",NA,"C","C","C","C","A","A","A","A"
+"LAKE WORTH","F",NA,NA,NA,NA,"D",NA,"F",NA,"C","C","C",NA
+"LAKE WORTH","G","C","C",NA,NA,"C","D","F","F","C","C","C","C"
+"LAKE WORTH","P","C","D",NA,NA,"D","F","F","F","D","C","D","D"
+"LAKELAND","G",NA,NA,NA,NA,NA,NA,"B",NA,"B",NA,"B",NA
+"LAKELAND","GPF",NA,NA,NA,NA,NA,"A","A",NA,NA,NA,NA,NA
+"LAKELAND","P",NA,NA,NA,NA,NA,"D",NA,"C","C","B","C","C"
+"LANTANA","F","D","D","D","D","D","D","D",NA,NA,"C","B",NA
+"LANTANA","P",NA,NA,NA,NA,NA,"A","A","A",NA,"A","A",NA
+"LARGO","PF","A","A","A","D","D",NA,"C","C","C","C","C","C"
+"LAUDERHILL","F",NA,"F","D",NA,"D",NA,"F",NA,NA,"C","D",NA
+"LAUDERHILL","G",NA,"B","B","C",NA,NA,"D",NA,"D","C","C",NA
+"LAUDERHILL","P","B",NA,NA,"C","C",NA,"C","C","C","C","C","C"
+"LAUDERHILL - C&M","G",NA,NA,NA,"C","C","D","D",NA,NA,"C","C","C"
+"LEESBURG","F",NA,NA,NA,NA,NA,NA,NA,NA,NA,"B","B","B"
+"LEESBURG","G",NA,NA,NA,"A","A","A","B","A","A","A","A","A"
+"LIVE OAK","F",NA,NA,"A",NA,NA,"C",NA,NA,NA,NA,NA,NA
+"LONGBOAT KEY","F","F","F",NA,"F","F","F","F","F","F",NA,"F","F"
+"LONGBOAT KEY","G","C","C",NA,"D","F","F","F","D","D",NA,NA,"D"
+"LONGBOAT KEY","P","D","D",NA,"F","F","F","F","D","F",NA,"F","F"
+"LYNN HAVEN","G","B","B","B","B","C","C","B","B","A","A","A","A"
+"LYNN HAVEN","P",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"A","A"
+"MADISON","F","D","D",NA,"D","D","F","F","F","D",NA,"F",NA
+"MAITLAND","PF",NA,NA,NA,NA,NA,"C","C","D",NA,"B","B","B"
+"MARCO ISLAND","F",NA,NA,"A",NA,"B","B","B","B","B","B",NA,"A"
+"MARCO ISLAND","P",NA,NA,"D","D","D","D",NA,"C",NA,"C","B","B"
+"MELBOURNE","F","B",NA,NA,"B",NA,"C",NA,"D",NA,"D","D",NA
+"MELBOURNE","G",NA,NA,NA,"A",NA,"A","A","A","A","A",NA,NA
+"MELBOURNE","P","C","C","C","C","C","D","D","C","C","C","C","C"
+"MELBOURNE - SPECIAL RISK","G",NA,NA,NA,"C",NA,"F","F","D","B","B","B","B"
+"MELBOURNE BEACH","P",NA,NA,NA,"C","D",NA,"F","D","D","C","C","C"
+"MIAMI","GS","D",NA,"B",NA,NA,"D",NA,NA,"D",NA,NA,NA
+"MIAMI - ELECTED","G",NA,NA,NA,"D",NA,NA,NA,"D",NA,"C","D","C"
+"MIAMI - EXCESS","GS",NA,"C",NA,"C",NA,"C",NA,"F",NA,NA,NA,NA
+"MIAMI - GESE","GS",NA,NA,NA,NA,NA,NA,NA,NA,NA,"C","C","C"
+"MIAMI - GESE (STAFF)","GS",NA,NA,NA,NA,NA,NA,NA,NA,NA,"C","C","C"
+"MIAMI - STAFF","GS","B",NA,NA,"B",NA,"C",NA,"F",NA,NA,NA,NA
+"MIAMI BEACH","G","B","B",NA,"B","C","D",NA,"D","D","D","C","C"
+"MIAMI BEACH","PF","C","C","D","D","D",NA,"D","D","D","D","D",NA
+"MIAMI SHORES VILLAGE","G",NA,NA,NA,NA,NA,NA,"B",NA,"A",NA,"A",NA
+"MIAMI SHORES VILLAGE","P",NA,NA,NA,NA,NA,NA,NA,NA,"C","C","C",NA
+"MIAMI SPRINGS","G",NA,NA,NA,NA,"A","A","A","A","A","A","A","A"
+"MIAMI SPRINGS","PF",NA,NA,NA,NA,"A","B","C","B","B","B","B","B"
+"MILTON","F","A","B","B","D","F","F","F","D","D",NA,"D","D"
+"MILTON","G","A","A",NA,"A","B","C","C","C","B","B","A","B"
+"MILTON","P","A","A","A","A","A","B","B","B","A","A","A","A"
+"MIRAMAR","F",NA,"F","F","F",NA,"F","F",NA,NA,"D",NA,"C"
+"MIRAMAR","G",NA,NA,NA,"C",NA,"C","B",NA,"C","A","B",NA
+"MIRAMAR","P",NA,"D",NA,"F","F","F",NA,"D","C",NA,"C",NA
+"MIRAMAR - MANAGEMENT","G","B",NA,NA,"D","D","D","D",NA,"C","C","D","D"
+"NAPLES","F",NA,NA,"D","D","D","D",NA,"C","C","B","D","D"
+"NAPLES","G","A","A","C","B","C","C","B","B","B","A","B","B"
+"NAPLES","P",NA,NA,"D","D","D","D","D","D","D","D","D","D"
+"NEPTUNE BEACH","P","C","C",NA,"C","C","C","C","C","B","B","B","B"
+"NEW PORT RICHEY","F","B",NA,"A","A","B",NA,NA,NA,NA,NA,NA,NA
+"NEW PORT RICHEY","P","C","C","C","C","D","D","D","D","C","C","B",NA
+"NEW SMYRNA BEACH","F","F","F",NA,"D","D","D","F","D","D",NA,"D","D"
+"NORTH MIAMI 691","F",NA,NA,NA,"A",NA,NA,NA,"B","B","C","C",NA
+"NORTH MIAMI 691","G",NA,NA,NA,"C",NA,"C",NA,"C","C","B","B",NA
+"NORTH MIAMI 691","P",NA,NA,NA,"B",NA,"C",NA,"A","A","A","A",NA
+"NORTH MIAMI 748","P","A","C",NA,"C",NA,"F",NA,"D","D","D",NA,NA
+"NORTH MIAMI BEACH","G","C","C",NA,"C",NA,"C","F","C","C","C","C",NA
+"NORTH MIAMI BEACH","PF",NA,NA,NA,"D",NA,"F",NA,"D",NA,"D",NA,"D"
+"NORTH PORT","F","C","C","B","B","C","C","C","B","B","A","B","B"
+"NORTH PORT","P",NA,"C","C","C","C","C","C","C","B","A","A","A"
+"OAKLAND PARK","G","C","C","F","F","F","F",NA,NA,NA,NA,NA,NA
+"OAKLAND PARK","PF",NA,NA,"C",NA,"D","D","D","C","C","C","C","C"
+"OCALA","F","C","C","B","C","C","C",NA,NA,"C","C","C","C"
+"OCALA","G","D","C",NA,"D","F","F",NA,"F","F","F","F","D"
+"OCALA","P","C","C","C","C","D","D","F","D","D",NA,"D","D"
+"OCOEE","G","B","A",NA,"B","B","B","C","B","A","A","A","A"
+"OCOEE","PF",NA,NA,NA,"C","C","C","D","C","C","B","B","B"
+"ORANGE PARK","F","B","B","B","B","C","C","D","D","B",NA,"B","A"
+"ORANGE PARK","G",NA,NA,NA,"C","D","D","D",NA,NA,"C","C","A"
+"ORANGE PARK","P",NA,"C","B","C","C","D","D",NA,"C","B","B","B"
+"ORLANDO","F",NA,NA,NA,"B","B","C","C","C","B","B","C","C"
+"ORLANDO","P",NA,NA,NA,"B","B","C","C","C","C","B","B","C"
+"ORMOND BEACH","F","D","C","C","D",NA,"F","D","C","C","C","C","C"
+"ORMOND BEACH","G","A","A",NA,"A","C","C","C","C","C","B","C","C"
+"ORMOND BEACH","P","B","B",NA,"B","B","D","D","C","C",NA,"C","C"
+"OVIEDO","P","B","B","A","A","B","C","C","C","B","A","A","A"
+"PALATKA","F",NA,NA,NA,"B","B","C","D","D","D","C","D","D"
+"PALATKA","G",NA,NA,NA,NA,"A","C","C","D",NA,"B","C","C"
+"PALATKA","P",NA,NA,NA,NA,"A","A","B","A","A","A","A","A"
+"PALM BAY","F",NA,"C",NA,"B","B","B","D","C","C","C","C","B"
+"PALM BAY","P",NA,NA,NA,"A","B","B","C","C","B","B","B","B"
+"PALM BEACH","F",NA,NA,NA,"C","D","D","D","D","D","D","D","D"
+"PALM BEACH","G",NA,NA,NA,"A",NA,NA,"A","B","B","A","C","C"
+"PALM BEACH","LG",NA,NA,NA,"C",NA,NA,"D","D","D","D","D","D"
+"PALM BEACH","P",NA,NA,NA,"B","B","C","C","C",NA,"D","D","C"
+"PALM BEACH GARDENS","F","D",NA,"D","D","D","C","D","D","C","B","B","C"
+"PALM BEACH GARDENS","G","C","C","C","C",NA,NA,NA,NA,NA,NA,NA,NA
+"PALM BEACH GARDENS","P",NA,NA,"D",NA,"D","D","D",NA,"C","C","C",NA
+"PALM COAST","F",NA,NA,NA,"A",NA,"B","B","A","A",NA,"A","A"
+"PALM SPRINGS","G","B","C","C",NA,NA,NA,NA,NA,NA,NA,NA,NA
+"PALM SPRINGS","PF","F","F",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"PALMETTO","G","A","A","B","B","B","C","D","C","C","C","C","B"
+"PALMETTO","P","A","A","A","A","A","C","C","B","B","B","B","B"
+"PANAMA CITY","F","D","D","C","C","D","D","F","D","D",NA,"D","D"
+"PANAMA CITY","P","B","B","B","B","B","D","D","D","B",NA,"C","C"
+"PARKLAND","P",NA,NA,NA,"D","D","B",NA,NA,NA,"C","C","C"
+"PEMBROKE PINES","G",NA,NA,NA,NA,NA,NA,NA,"B","A","A","A",NA
+"PEMBROKE PINES","PF",NA,NA,NA,NA,NA,NA,"F","D","D","D","D",NA
+"PENSACOLA","F",NA,NA,"C","C","C","C",NA,NA,"C","C","B","B"
+"PENSACOLA","G","D","D",NA,"D","D","D",NA,"D",NA,"D",NA,"C"
+"PENSACOLA","P",NA,NA,NA,NA,NA,NA,NA,"D","C","C","C",NA
+"PERRY","F",NA,NA,NA,NA,NA,"D","F","D","D",NA,"B","C"
+"PERRY","P",NA,"A",NA,"A",NA,"B","D","C","B",NA,"B","A"
+"PINELLAS PARK","F","C","D",NA,"D","D","D","D","C","C","C","C","C"
+"PINELLAS PARK","G","A","A","A",NA,"A","B","C","B",NA,"A","A","A"
+"PINELLAS PARK","P",NA,"A","A",NA,"B","C","C","B",NA,"A","A",NA
+"PLANT CITY","PF","F","D","D","D","F","F","F","D","C","C","C","C"
+"PLANTATION","G","A","A","A","A","A","B","C","C","C","B","C",NA
+"PLANTATION","P",NA,NA,"C","C","C","C","D","C","C","C","C","C"
+"POMPANO BEACH","F",NA,NA,"D",NA,"D","D","D","C","C","B","C",NA
+"POMPANO BEACH","G","A",NA,"A","B","C","C","F","D","D","D","D","D"
+"POMPANO BEACH","P",NA,NA,NA,NA,"D","D","D","C","C","C","C",NA
+"POMPANO BEACH","PF",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"C"
+"PONCE INLET","F",NA,NA,NA,"A",NA,"B",NA,NA,NA,NA,NA,NA
+"PORT ORANGE","F","F","F","F","F","F","F","F","F","F","F","F","D"
+"PORT ORANGE","P",NA,NA,"F",NA,"F",NA,NA,"D","C","C","C",NA
+"PORT ST. LUCIE","P","D","B",NA,"B","C","C",NA,"C","C","B","C","C"
+"PUNTA GORDA","F","C","C","C","C","C","D","F","D","C",NA,"B","B"
+"PUNTA GORDA","G","B","B","A","B","B","B","C","C","B","B","B","B"
+"QUINCY","PF",NA,NA,NA,NA,NA,NA,NA,NA,"C",NA,"C",NA
+"RIVIERA BEACH","F",NA,"B","B","B","B",NA,"C","B","B","B",NA,"A"
+"RIVIERA BEACH","G",NA,NA,NA,"C","D","D","D","C",NA,"C","A","A"
+"RIVIERA BEACH","P",NA,NA,"B",NA,NA,NA,"C",NA,NA,"B","A",NA
+"ROCKLEDGE","F",NA,NA,"A",NA,"A","C",NA,"D","D","D","D",NA
+"ROCKLEDGE","G",NA,"A","A","A",NA,"A",NA,"A","A","A","B",NA
+"ROCKLEDGE","P",NA,NA,"A",NA,"A","A",NA,"A","A","A","A",NA
+"SAINT AUGUSTINE","G",NA,NA,NA,"A","A",NA,"B",NA,"B","B","C",NA
+"SAINT AUGUSTINE","P",NA,NA,NA,NA,"A","A","A","A",NA,"A","A",NA
+"SAINT CLOUD","G",NA,NA,NA,"A","A","B","B","B","A","A","A","A"
+"SAINT CLOUD","PF",NA,NA,NA,"B","C","C","D","D","C","B","B","C"
+"SAINT PETE BEACH","F",NA,NA,NA,"D",NA,"F",NA,"D","D","C","D","D"
+"SAINT PETE BEACH","G",NA,NA,NA,"D","D","D",NA,"D","D","D","D","D"
+"SAINT PETE BEACH","P",NA,NA,NA,"D","D","D","F","D",NA,"D","D","D"
+"SAINT PETERSBURG","F",NA,NA,NA,"B","B","C","D","B","B","B","A","A"
+"SAINT PETERSBURG","G",NA,NA,NA,NA,"A","B","C","A","A","A","A","A"
+"SAINT PETERSBURG","P",NA,NA,NA,"B","B","B","C","B","B","B","B","B"
+"SANFORD","F","C","C",NA,"C","D","D","D","D","C",NA,"B","B"
+"SANFORD","P","C",NA,NA,"C","C","C","D","C","B",NA,"A","A"
+"SANIBEL","G","B","C","C","D","F","F","F","C","C","B","B","C"
+"SANIBEL","P","C","D",NA,"F","D","F","F","D","C","C","C","C"
+"SARASOTA","F",NA,"D","B","D","D","D","D","D","D","C","D","D"
+"SARASOTA","G","A","A",NA,"A","A","B","C","C","C","C","C","C"
+"SARASOTA","P",NA,"B","B","B","B","C","D","C","C","B","C","B"
+"SATELLITE BEACH","G",NA,NA,"C","C","C","D","D",NA,NA,NA,NA,NA
+"SATELLITE BEACH","PF",NA,NA,"C","C","C","C","D","C","C","C","C","C"
+"SEBASTIAN","P",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"A","A"
+"SEMINOLE","F",NA,NA,NA,NA,NA,NA,"B","B","A","A","A","B"
+"SOUTH MIAMI","G","B",NA,NA,"A","B","B","B","A","A","A","A",NA
+"SOUTH MIAMI","P","B",NA,NA,"C","C","C","C","C","B","A","A",NA
+"SOUTH PASADENA","F","B","B","C","C","D","D","D","D",NA,"B","C","C"
+"ST. AUGUSTINE","P",NA,"A",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"ST. CLOUD","G","A","A","A",NA,NA,NA,NA,NA,NA,NA,NA,NA
+"ST. CLOUD","PF","B","A","A",NA,NA,NA,NA,NA,NA,NA,NA,NA
+"ST. PETE BEACH","F","D","D","D",NA,NA,NA,NA,NA,NA,NA,NA,NA
+"ST. PETE BEACH","G","C","C","C",NA,NA,NA,NA,NA,NA,NA,NA,NA
+"ST. PETE BEACH","P","C","C","C",NA,NA,NA,NA,NA,NA,NA,NA,NA
+"ST. PETERSBURG","F","D","D",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"ST. PETERSBURG","P","D","D",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"STARKE","F",NA,NA,NA,"C",NA,"D",NA,"C","C","B","C",NA
+"STARKE","G",NA,NA,NA,"D",NA,"F","D",NA,"C","C","C",NA
+"STARKE","P",NA,NA,NA,"A",NA,"B",NA,"B","B","B","B",NA
+"SUNRISE","F",NA,NA,"C",NA,"D",NA,"F",NA,"D","D","D",NA
+"SUNRISE","G",NA,NA,NA,NA,"C","D","F",NA,"C",NA,"C",NA
+"SUNRISE","P",NA,NA,NA,NA,"F","F","F","D","D","D","D","C"
+"SURFSIDE","G",NA,NA,NA,"A","A","A","A","A","A","A","A",NA
+"SURFSIDE","P",NA,NA,NA,"A","A","A","B","A","A","A","A",NA
+"TALLAHASSEE","F","A",NA,"A",NA,"B",NA,NA,"C",NA,"B",NA,NA
+"TALLAHASSEE","G","A",NA,"A",NA,"A",NA,NA,"A",NA,"A",NA,NA
+"TALLAHASSEE","P","A",NA,"A",NA,"A",NA,NA,"B",NA,"B",NA,NA
+"TAMARAC","F",NA,"C",NA,"C",NA,"C",NA,"C",NA,"B","B",NA
+"TAMARAC","G","A",NA,NA,"B",NA,"B",NA,"A",NA,"A","A","A"
+"TAMARAC","P","C",NA,NA,NA,NA,"F","F","F",NA,"F","F",NA
+"TAMARAC - ELECTED","G",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"B","B"
+"TAMARAC - EXECUTIVE","G",NA,NA,NA,NA,"D",NA,"D",NA,"C","B",NA,NA
+"TAMPA","PF",NA,"A",NA,"A","B","B",NA,"B","B","B","B","A"
+"TARPON SPRINGS","F","C","C","B","B","B","D","D","D","D",NA,"B","C"
+"TARPON SPRINGS","P","C","B","A","A","B","B","C","B","A",NA,"A","A"
+"TAVARES","F",NA,"C",NA,"C",NA,NA,"C","C","B","B","B","B"
+"TAVARES","P","A","C","B",NA,"C",NA,"C","B","B","B","B","B"
+"TEMPLE TERRACE","F","B",NA,"C","D",NA,"D","F","D","D","C","C","C"
+"TEMPLE TERRACE","P","D","D","D","F","F","F","F","F","D",NA,"D","D"
+"TEQUESTA","F",NA,NA,NA,NA,"A",NA,"B","C","A","A","C","A"
+"TEQUESTA","P",NA,NA,NA,NA,"A",NA,"A","A","A","A","A","A"
+"TITUSVILLE","G","A","A","A","C","C","D","F","D","D","B","B","B"
+"TITUSVILLE","PF","C","C",NA,"D",NA,"F","F","D",NA,"B","B","B"
+"VENICE","F","F","F","F","F","F","F","F","D","D","D","D","D"
+"VENICE","G","A","A",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"VENICE","P","B","C","B","C","D","D","D","D","D","C","C","C"
+"VERO BEACH","F",NA,NA,NA,"B","B","B","D","C","C","C","C","C"
+"VERO BEACH","G",NA,"C",NA,NA,"C","D","D","C","D","D","C","D"
+"VERO BEACH","P","A",NA,"A","A","B","C","D","B",NA,"B","B",NA
+"VILLAGE OF NORTH PALM BEACH","PF",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"B"
+"VILLAGE OF PALM SPRINGS","G",NA,NA,NA,"C","C","C","C",NA,NA,"B",NA,"B"
+"VILLAGE OF PALM SPRINGS","PF",NA,NA,"C",NA,"D","D","D",NA,"C",NA,"C",NA
+"WEST PALM BEACH","F","D",NA,NA,"D","D","D","C","D","D","D","D","D"
+"WEST PALM BEACH","P","B",NA,"A","A",NA,NA,"D","D","C","C","C",NA
+"WILLISTON","G",NA,NA,NA,"A",NA,NA,NA,NA,NA,NA,NA,NA
+"WILTON MANORS","F",NA,NA,"D","D",NA,"F","F","D","D",NA,NA,"A"
+"WILTON MANORS","G",NA,NA,NA,"C","D","C","C","C","B","C","C","C"
+"WILTON MANORS","P",NA,NA,NA,"D","D","D","D","C","C","C","D","C"
+"WINTER GARDEN","G",NA,NA,NA,NA,NA,"A","A","A","A","A","A","A"
+"WINTER GARDEN","PF",NA,NA,NA,NA,NA,"A","A","A","A","A","A","A"
+"WINTER HAVEN","F","C","D",NA,"D","F","F","F","D","D","C","C","C"
+"WINTER HAVEN","G","C","C",NA,"C","C","F","F","F","D","D","C","C"
+"WINTER HAVEN","P","C","B","B","C","C","C","C","C","B","A","A","B"
+"WINTER PARK","F",NA,NA,"B",NA,"B","C","D","B","C","B","B",NA
+"WINTER PARK","P",NA,"B",NA,NA,"C","D","D","D","D","B","C",NA
+"WINTER SPRINGS","GPF",NA,NA,NA,"D",NA,"D",NA,"D","D","D","C",NA
