@@ -47,6 +47,10 @@ blrs_g_2005$UAAL_AS_PERC_OF_COVD_PAY[blrs_g_2005$UAAL_AS_PERC_OF_COVD_PAY == "0.
 blrs_g_2005$UAAL_AS_PERC_OF_COVD_PAY[blrs_g_2005$UAAL_AS_PERC_OF_COVD_PAY == "55.8%"] <- 55.8
 blrs_g_2005$UAAL_AS_PERC_OF_COVD_PAY[blrs_g_2005$UAAL_AS_PERC_OF_COVD_PAY == "========="] <- NA
 blrs_g_2005$UAAL_AS_PERC_OF_COVD_PAY <- as.numeric(blrs_g_2005$UAAL_AS_PERC_OF_COVD_PAY)
+blrs_g_2005$TOTAL_ASSETS <- blrs_g_2005$TOTAL_ASSETS * 1000
+blrs_g_2005$AAL <- blrs_g_2005$AAL * 1000
+blrs_g_2005$UAAL <- blrs_g_2005$UAAL * 1000
+blrs_g_2005$COVERED_PAYROLL <- blrs_g_2005$COVERED_PAYROLL * 1000
 blrs_g_2005$REPORT_YR <- as.numeric("2005")
 blrs_g_2005$REVISED_INDICATOR <- NA
 blrs_g_2005$PLAN_CHANGE <- NA
@@ -82,6 +86,10 @@ blrs_g_2006$UAAL_AS_PERC_OF_COVD_PAY[blrs_g_2006$UAAL_AS_PERC_OF_COVD_PAY == "0.
 blrs_g_2006$UAAL_AS_PERC_OF_COVD_PAY[blrs_g_2006$UAAL_AS_PERC_OF_COVD_PAY == "55.8%"] <- 55.8
 blrs_g_2006$UAAL_AS_PERC_OF_COVD_PAY[blrs_g_2006$UAAL_AS_PERC_OF_COVD_PAY == "========="] <- NA
 blrs_g_2006$UAAL_AS_PERC_OF_COVD_PAY <- as.numeric(blrs_g_2006$UAAL_AS_PERC_OF_COVD_PAY)
+blrs_g_2006$TOTAL_ASSETS <- blrs_g_2006$TOTAL_ASSETS * 1000
+blrs_g_2006$AAL <- blrs_g_2006$AAL * 1000
+blrs_g_2006$UAAL <- blrs_g_2006$UAAL * 1000
+blrs_g_2006$COVERED_PAYROLL <- blrs_g_2006$COVERED_PAYROLL * 1000
 blrs_g_2006$REPORT_YR <- as.numeric("2006")
 blrs_g_2006$REVISED_INDICATOR <- NA
 blrs_g_2006$PLAN_CHANGE <- NA
@@ -119,6 +127,10 @@ blrs_g_2007$UAAL_AS_PERC_OF_COVD_PAY[blrs_g_2007$UAAL_AS_PERC_OF_COVD_PAY == "0.
 blrs_g_2007$UAAL_AS_PERC_OF_COVD_PAY[blrs_g_2007$UAAL_AS_PERC_OF_COVD_PAY == "55.8%"] <- 55.8
 blrs_g_2007$UAAL_AS_PERC_OF_COVD_PAY[blrs_g_2007$UAAL_AS_PERC_OF_COVD_PAY == "========="] <- NA
 blrs_g_2007$UAAL_AS_PERC_OF_COVD_PAY <- as.numeric(blrs_g_2007$UAAL_AS_PERC_OF_COVD_PAY)
+blrs_g_2007$TOTAL_ASSETS <- blrs_g_2007$TOTAL_ASSETS * 1000
+blrs_g_2007$AAL <- blrs_g_2007$AAL * 1000
+blrs_g_2007$UAAL <- blrs_g_2007$UAAL * 1000
+blrs_g_2007$COVERED_PAYROLL <- blrs_g_2007$COVERED_PAYROLL * 1000
 blrs_g_2007$REPORT_YR <- as.numeric("2007")
 blrs_g_2007$REVISED_INDICATOR <- NA
 blrs_g_2007$PLAN_CHANGE <- NA
@@ -156,6 +168,10 @@ blrs_g_2008$UAAL_AS_PERC_OF_COVD_PAY[blrs_g_2008$UAAL_AS_PERC_OF_COVD_PAY == "0.
 blrs_g_2008$UAAL_AS_PERC_OF_COVD_PAY[blrs_g_2008$UAAL_AS_PERC_OF_COVD_PAY == "55.8%"] <- 55.8
 blrs_g_2008$UAAL_AS_PERC_OF_COVD_PAY[blrs_g_2008$UAAL_AS_PERC_OF_COVD_PAY == "========="] <- NA
 blrs_g_2008$UAAL_AS_PERC_OF_COVD_PAY <- as.numeric(blrs_g_2008$UAAL_AS_PERC_OF_COVD_PAY)
+blrs_g_2008$TOTAL_ASSETS <- blrs_g_2008$TOTAL_ASSETS * 1000
+blrs_g_2008$AAL <- blrs_g_2008$AAL * 1000
+blrs_g_2008$UAAL <- blrs_g_2008$UAAL * 1000
+blrs_g_2008$COVERED_PAYROLL <- blrs_g_2008$COVERED_PAYROLL * 1000
 blrs_g_2008$REPORT_YR <- as.numeric("2008")
 blrs_g_2008$REVISED_INDICATOR <- NA
 blrs_g_2008$PLAN_CHANGE <- NA
@@ -196,6 +212,9 @@ blrs_g_2009$UAAL_AS_PERC_OF_COVD_PAY <- as.numeric(blrs_g_2009$UAAL_AS_PERC_OF_C
 blrs_g_2009$REPORT_YR <- as.numeric("2009")
 blrs_g_2009$C_V <- NA
 blrs_g_2009$TOTAL_MARKET_ASSETS <- NA
+blrs_g_2009 <- filter(blrs_g_2009, PLAN_CHANGE != "Before" | PLAN_CHANGE != "BEFORE")
+blrs_g_2009 <- filter(blrs_g_2009, FUND_METHOD == "EAN" | FUND_METHOD == "PUC")
+
 
 ### 2010 data
 blrs_g_2010 <- read_excel("2010 Report/Appendix_G.xls", 
@@ -236,6 +255,8 @@ blrs_g_2010$UAAL_AS_PERC_OF_COVD_PAY <- as.numeric(blrs_g_2010$UAAL_AS_PERC_OF_C
 blrs_g_2010$REPORT_YR <- as.numeric("2010")
 blrs_g_2010$C_V <- NA
 blrs_g_2010$TOTAL_MARKET_ASSETS <- NA
+blrs_g_2010 <- filter(blrs_g_2010, PLAN_CHANGE != "Before" | PLAN_CHANGE != "BEFORE")
+blrs_g_2010 <- filter(blrs_g_2010, FUND_METHOD == "EAN" | FUND_METHOD == "PUC")
 
 ### 2011 data (For this year, xlsx file saved as xls file)
 blrs_g_2011 <- read_excel("2011 Report/Appendix_G.xls", 
@@ -276,6 +297,9 @@ blrs_g_2011$UAAL_AS_PERC_OF_COVD_PAY <- as.numeric(blrs_g_2011$UAAL_AS_PERC_OF_C
 blrs_g_2011$REPORT_YR <- as.numeric("2011")
 blrs_g_2011$C_V <- NA
 blrs_g_2011$TOTAL_MARKET_ASSETS <- NA
+blrs_g_2011 <- filter(blrs_g_2011, PLAN_CHANGE != "Before" | PLAN_CHANGE != "BEFORE")
+blrs_g_2011 <- filter(blrs_g_2011, FUND_METHOD == "EAN" | FUND_METHOD == "PUC")
+
 
 ### 2012 data (For this year, xlsx file saved as xls file)
 blrs_g_2012 <- read_excel("2012 Report/Appendix_G.xls", 
@@ -316,6 +340,8 @@ blrs_g_2012$UAAL_AS_PERC_OF_COVD_PAY <- as.numeric(blrs_g_2012$UAAL_AS_PERC_OF_C
 blrs_g_2012$REPORT_YR <- as.numeric("2012")
 blrs_g_2012$C_V <- NA
 blrs_g_2012$TOTAL_MARKET_ASSETS <- NA
+blrs_g_2012 <- filter(blrs_g_2012, PLAN_CHANGE != "Before" | PLAN_CHANGE != "BEFORE")
+blrs_g_2012 <- filter(blrs_g_2012, FUND_METHOD == "EAN" | FUND_METHOD == "PUC")
 
 ### 2013 data (For this year, xlsx file saved as xls file)
 blrs_g_2013 <- read_excel("2013 Report/2013-11 - Appendix G - Funding Progress (GASB 25).xls", 
@@ -356,6 +382,8 @@ blrs_g_2013$UAAL_AS_PERC_OF_COVD_PAY <- as.numeric(blrs_g_2013$UAAL_AS_PERC_OF_C
 blrs_g_2013$REPORT_YR <- as.numeric("2013")
 blrs_g_2013$C_V <- NA
 blrs_g_2013$TOTAL_MARKET_ASSETS <- NA
+blrs_g_2013 <- filter(blrs_g_2013, PLAN_CHANGE != "Before" | PLAN_CHANGE != "BEFORE")
+blrs_g_2013 <- filter(blrs_g_2013, FUND_METHOD == "EAN" | FUND_METHOD == "PUC")
 
 ### 2014 data
 blrs_g_2014 <- read_excel("2014 Report/2014-11 - Appendix G - Funding Progress (GASB 25).xls", 
@@ -396,6 +424,8 @@ blrs_g_2014$UAAL_AS_PERC_OF_COVD_PAY <- as.numeric(blrs_g_2014$UAAL_AS_PERC_OF_C
 blrs_g_2014$REPORT_YR <- as.numeric("2014")
 blrs_g_2014$C_V <- NA
 blrs_g_2014$TOTAL_MARKET_ASSETS <- NA
+blrs_g_2014 <- filter(blrs_g_2014, PLAN_CHANGE != "Before" | PLAN_CHANGE != "BEFORE")
+blrs_g_2014 <- filter(blrs_g_2014, FUND_METHOD == "EAN" | FUND_METHOD == "PUC")
 
 ### 2015 data
 blrs_g_2015 <- read_excel("2015 Report/Appendix_G.xls", 
@@ -437,6 +467,8 @@ blrs_g_2015$UAAL_AS_PERC_OF_COVD_PAY <- as.numeric(blrs_g_2015$UAAL_AS_PERC_OF_C
 blrs_g_2015$REPORT_YR <- as.numeric("2015")
 blrs_g_2015$C_V <- NA
 blrs_g_2015$COMMENTS <- NA
+blrs_g_2015 <- filter(blrs_g_2015, PLAN_CHANGE != "Before" | PLAN_CHANGE != "BEFORE")
+blrs_g_2015 <- filter(blrs_g_2015, FUND_METHOD == "EAN" | FUND_METHOD == "PUC")
 
 ### 2016 data
 blrs_g_2016 <- read_excel("2016 Report/Appendix_G.xls", 
@@ -478,6 +510,8 @@ blrs_g_2016$UAAL_AS_PERC_OF_COVD_PAY <- as.numeric(blrs_g_2016$UAAL_AS_PERC_OF_C
 blrs_g_2016$REPORT_YR <- as.numeric("2016")
 blrs_g_2016$C_V <- NA
 blrs_g_2016$COMMENTS <- NA
+blrs_g_2016 <- filter(blrs_g_2016, PLAN_CHANGE != "Before" | PLAN_CHANGE != "BEFORE")
+blrs_g_2016 <- filter(blrs_g_2016, FUND_METHOD == "EAN" | FUND_METHOD == "PUC")
 
 ### 2017 data
 blrs_g_2017 <- read_excel("2017 Report/Appendix_G.xls", 
@@ -519,6 +553,8 @@ blrs_g_2017$UAAL_AS_PERC_OF_COVD_PAY <- as.numeric(blrs_g_2017$UAAL_AS_PERC_OF_C
 blrs_g_2017$REPORT_YR <- as.numeric("2017")
 blrs_g_2017$C_V <- NA
 blrs_g_2017$COMMENTS <- NA
+blrs_g_2017 <- filter(blrs_g_2017, PLAN_CHANGE != "Before" | PLAN_CHANGE != "BEFORE")
+blrs_g_2017 <- filter(blrs_g_2017, FUND_METHOD == "EAN" | FUND_METHOD == "PUC")
 
 #### Part 2. Bind each year into a single table & relabel variables
 
@@ -581,6 +617,14 @@ blrs_g <- blrs_g %>% rename(plan_sponsor_g = plan_sponsor)
 blrs_g <- blrs_g %>%
   group_by(plan_sponsor_clean, plan_type_g, val_date_g) %>%
   filter(report_year_g == max(report_year_g))
+
+# remove duplicates
+x <- select(blrs_g, -"revised_indicator_g", -"plan_change_g", -"comments_g")
+blrs_g <- blrs_g[!duplicated(x), ]
+
+# only keep EAN and PUC
+blrs_g <- filter(blrs_g, funded_method_g == "EAN" | funded_method_g == "PUC")
+
 
 save(blrs_g, file="blrs_g.RData")    
 
