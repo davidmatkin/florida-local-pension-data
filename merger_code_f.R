@@ -12,7 +12,7 @@ library(lubridate)
 library(purrr)
 
 #setwd("C:/Users/David Matkin/Dropbox/Retirement_Research/Pension OPEB Data/FL_LocalPensionReports")
-setwd(("C:/Users/dsm32/Dropbox/Retirement_Research/Pension OPEB Data/FL_LocalPensionReports"))
+#setwd(("C:/Users/dsm32/Dropbox/Retirement_Research/Pension OPEB Data/FL_LocalPensionReports"))
 
 #### Part 1. Date importing and cleaning
 ### First, import excel files
@@ -29,7 +29,7 @@ blrs_f_2005 <- read_excel("2005 Report/2005-blrs-f.xls",
                           col_types = c("text", "text", "numeric", 
                                         "text", "numeric", "numeric",
                                         "numeric", "numeric", "text"))
-blrs_f_2005$REPORT_YR <- as.numeric("2005")
+blrs_f_2005$REPORT_YR <- 2005
 blrs_f_2005$MEMBR_DROP <- as.numeric(NA)
 
 ## 2006 data
@@ -41,7 +41,7 @@ blrs_f_2006 <- read_excel("2006 Report/2006-08 F - Population Data - 14f.xls",
                           col_types = c("text", "text", "numeric", 
                                         "text", "numeric", "numeric",
                                         "numeric", "numeric", "text"))
-blrs_f_2006$REPORT_YR <- as.numeric("2006")
+blrs_f_2006$REPORT_YR <- 2006
 blrs_f_2006$MEMBR_DROP <- as.numeric(NA)
 
 
@@ -54,7 +54,7 @@ blrs_f_2007 <- read_excel("2007 Report/Appendix_F.xls",
                           col_types = c("text", "text", "numeric", 
                                         "text", "numeric", "numeric",
                                         "numeric", "numeric", "text"))
-blrs_f_2007$REPORT_YR <- as.numeric("2007")
+blrs_f_2007$REPORT_YR <- 2007
 blrs_f_2007$MEMBR_DROP <- as.numeric(NA)
 
 
@@ -70,7 +70,7 @@ blrs_f_2008 <- read_excel("2008 Report/Appendix_F(1).xls",
                                         "numeric", "text", "text"))
 blrs_f_2008$MEMBR_TERMD[blrs_f_2008$MEMBR_TERMD=="11*"] <- 11
 blrs_f_2008$MEMBR_TERMD <- as.numeric(blrs_f_2008$MEMBR_TERMD)
-blrs_f_2008$REPORT_YR <- as.numeric("2008")
+blrs_f_2008$REPORT_YR <- 2008
 blrs_f_2008$MEMBR_DROP <- as.numeric(NA)
 
 ### 2009 data
@@ -88,7 +88,7 @@ blrs_f_2009$COUNTY_POPULATION <- as.numeric(blrs_f_2009$COUNTY_POPULATION)
 blrs_f_2009$MEMBR_ACTIV <- as.numeric(blrs_f_2009$MEMBR_ACTIV)
 blrs_f_2009$MEMBR_RETRD <- as.numeric(blrs_f_2009$MEMBR_RETRD)
 blrs_f_2009$MEMBR_TERMD <- as.numeric(blrs_f_2009$MEMBR_TERMD)
-blrs_f_2009$REPORT_YR <- as.numeric("2009")
+blrs_f_2009$REPORT_YR <- 2009
 blrs_f_2009$MEMBR_DROP <- as.numeric(NA)
 
 ### 2010 data
@@ -100,12 +100,12 @@ blrs_f_2010 <- read_excel("2010 Report/Appendix_F.xls",
                           col_types = c("text", "text", "numeric", 
                                         "text", "numeric", "numeric",
                                         "numeric", "numeric", "text"))
-blrs_f_2010$REPORT_YR <- as.numeric("2010")
+blrs_f_2010$REPORT_YR <- 2010
 blrs_f_2010$MEMBR_DROP <- as.numeric(NA)           
 
 
-### 2011 data (For this year, I resaved xlsx file to xls file)
-blrs_f_2011 <- read_excel("2011 Report/Appendix_F.xls", 
+### 2011 data 
+blrs_f_2011 <- read_excel("2011 Report/Appendix_F.xlsx", 
                           na = c("-",""),
                           range = "A2:I493",
                           col_names = c("CITY_OR_DISTRICT", "TYP_SYS", "CITY_POPULATION",
@@ -114,11 +114,11 @@ blrs_f_2011 <- read_excel("2011 Report/Appendix_F.xls",
                           col_types = c("text", "text", "numeric", 
                                         "text", "numeric", "numeric",
                                         "numeric", "numeric", "text"))
-blrs_f_2011$REPORT_YR <- as.numeric("2011")
+blrs_f_2011$REPORT_YR <- 2011
 blrs_f_2011$MEMBR_DROP <- as.numeric(NA)    
 
-### 2012 data (For this year, xlsx file saved as xls file)
-blrs_f_2012 <- read_excel("2012 Report/Appendix_F.xls", 
+### 2012 data 
+blrs_f_2012 <- read_excel("2012 Report/Appendix_F.xlsx", 
                           na = c("-",""),
                           range = "A2:J493",
                           col_names = c("CITY_OR_DISTRICT", "TYP_SYS", "CITY_POPULATION",
@@ -133,10 +133,10 @@ blrs_f_2012$MEMBR_ACTIV <- as.numeric(blrs_f_2012$MEMBR_ACTIV)
 blrs_f_2012$MEMBR_RETRD <- as.numeric(blrs_f_2012$MEMBR_RETRD)
 blrs_f_2012$MEMBR_DROP <- as.numeric(blrs_f_2012$MEMBR_DROP)
 blrs_f_2012$MEMBR_TERMD <- as.numeric(blrs_f_2012$MEMBR_TERMD)
-blrs_f_2012$REPORT_YR <- as.numeric("2012")
+blrs_f_2012$REPORT_YR <- 2012
 
-### 2013 data (For this year, xlsx file saved as xls file)
-blrs_f_2013 <- read_excel("2013 Report/2013-10 - Appendix F - Population Data.xls", 
+### 2013 data 
+blrs_f_2013 <- read_excel("2013 Report/2013-10 - Appendix F - Population Data.xlsx", 
                           na = c("-",""),
                           range = "A2:J492",
                           col_names = c("CITY_OR_DISTRICT", "TYP_SYS", "CITY_POPULATION",
@@ -151,7 +151,7 @@ blrs_f_2013$MEMBR_ACTIV <- as.numeric(blrs_f_2013$MEMBR_ACTIV)
 blrs_f_2013$MEMBR_RETRD <- as.numeric(blrs_f_2013$MEMBR_RETRD)
 blrs_f_2013$MEMBR_DROP <- as.numeric(blrs_f_2013$MEMBR_DROP)
 blrs_f_2013$MEMBR_TERMD <- as.numeric(blrs_f_2013$MEMBR_TERMD)
-blrs_f_2013$REPORT_YR <- as.numeric("2013")
+blrs_f_2013$REPORT_YR <- 2013
 
 ### 2014 data
 blrs_f_2014 <- read_excel("2014 Report/2014-10 - Appendix F - Population Data.xls",
@@ -169,7 +169,7 @@ blrs_f_2014$MEMBR_ACTIV <- as.numeric(blrs_f_2014$MEMBR_ACTIV)
 blrs_f_2014$MEMBR_RETRD <- as.numeric(blrs_f_2014$MEMBR_RETRD)
 blrs_f_2014$MEMBR_DROP <- as.numeric(blrs_f_2014$MEMBR_DROP)
 blrs_f_2014$MEMBR_TERMD <- as.numeric(blrs_f_2014$MEMBR_TERMD)
-blrs_f_2014$REPORT_YR <- as.numeric("2014")
+blrs_f_2014$REPORT_YR <- 2014
 
 ### 2015 data
 blrs_f_2015 <- read_excel("2015 Report/Appendix_F.xls",
@@ -187,7 +187,7 @@ blrs_f_2015$MEMBR_ACTIV <- as.numeric(blrs_f_2015$MEMBR_ACTIV)
 blrs_f_2015$MEMBR_RETRD <- as.numeric(blrs_f_2015$MEMBR_RETRD)
 blrs_f_2015$MEMBR_DROP <- as.numeric(blrs_f_2015$MEMBR_DROP)
 blrs_f_2015$MEMBR_TERMD <- as.numeric(blrs_f_2015$MEMBR_TERMD)
-blrs_f_2015$REPORT_YR <- as.numeric("2015")
+blrs_f_2015$REPORT_YR <- 2015
 blrs_f_2015$COMMENTS <- as.character(NA)
 
 ### 2016 data
@@ -206,7 +206,7 @@ blrs_f_2016$MEMBR_ACTIV <- as.numeric(blrs_f_2016$MEMBR_ACTIV)
 blrs_f_2016$MEMBR_RETRD <- as.numeric(blrs_f_2016$MEMBR_RETRD)
 blrs_f_2016$MEMBR_DROP <- as.numeric(blrs_f_2016$MEMBR_DROP)
 blrs_f_2016$MEMBR_TERMD <- as.numeric(blrs_f_2016$MEMBR_TERMD)
-blrs_f_2016$REPORT_YR <- as.numeric("2016")
+blrs_f_2016$REPORT_YR <- 2016
 blrs_f_2016$COMMENTS <- as.character(NA)
 
 ### 2017 data
@@ -225,7 +225,7 @@ blrs_f_2017$MEMBR_ACTIV <- as.numeric(blrs_f_2017$MEMBR_ACTIV)
 blrs_f_2017$MEMBR_RETRD <- as.numeric(blrs_f_2017$MEMBR_RETRD)
 blrs_f_2017$MEMBR_DROP <- as.numeric(blrs_f_2017$MEMBR_DROP)
 blrs_f_2017$MEMBR_TERMD <- as.numeric(blrs_f_2017$MEMBR_TERMD)
-blrs_f_2017$REPORT_YR <- as.numeric("2017")
+blrs_f_2017$REPORT_YR <- 2017
 blrs_f_2017$COMMENTS <- as.character(NA)
 
 
@@ -272,7 +272,7 @@ name_table <- name_table %>%
 
 ### consistent names for plan_type
 
-blrs_f$plan_type_a[blrs_f$plan_type_a=="G&S"] <- "GS"
+blrs_f$plan_type_f[blrs_f$plan_type_f=="G&S"] <- "GS"
 
 blrs_f <- right_join(name_table, blrs_f, by = "plan_sponsor")  
 

@@ -12,7 +12,8 @@ library(lubridate)
 library(purrr)
 
 #setwd("C:/Users/David Matkin/Dropbox/Retirement_Research/Pension OPEB Data/FL_LocalPensionReports")
-setwd(("C:/Users/dsm32/Dropbox/Retirement_Research/Pension OPEB Data/FL_LocalPensionReports"))
+#setwd(("C:/Users/dsm32/Dropbox/Retirement_Research/Pension OPEB Data/FL_LocalPensionReports"))
+
 
 #### Part 1. Date importing and cleaning
 ### First, import excel files
@@ -26,7 +27,7 @@ blrs_a_2005 <- blrs_a_2005[!is.na(blrs_a_2005$CITY_OR_DISTRICT),]
 blrs_a_2005$VAL_DATE <- ymd(blrs_a_2005$VAL_DATE)
 blrs_a_2005 <- blrs_a_2005 %>% #change date format
   mutate(PLAN_YEAR_BEGINNING=as.Date(PLAN_YEAR_BEGINNING, origin="1899-12-30"), PAYMENT_BEGINNING=as.Date(PAYMENT_BEGINNING, origin="1899-12-30")) 
-blrs_a_2005$REPORT_YR <- as.numeric("2005")
+blrs_a_2005$REPORT_YR <- 2005
 blrs_a_2005 <- blrs_a_2005 %>% 
   mutate(TOTAL_ASSETS = TOTAL_ASSETS * 1000) %>%
   mutate(UAAL = UAAL * 1000) %>%
@@ -52,7 +53,7 @@ blrs_a_2006 <- blrs_a_2006[!is.na(blrs_a_2006$CITY_OR_DISTRICT),]
 blrs_a_2006$VAL_DATE <- ymd(blrs_a_2006$VAL_DATE)
 blrs_a_2006$PLAN_YEAR_BEGINNING <- ymd(blrs_a_2006$PLAN_YEAR_BEGINNING)
 blrs_a_2006$PAYMENT_BEGINNING <- ymd(blrs_a_2006$PAYMENT_BEGINNING)
-blrs_a_2006$REPORT_YR <- as.numeric("2006")
+blrs_a_2006$REPORT_YR <- 2006
 blrs_a_2006 <- blrs_a_2006 %>% 
   mutate(TOTAL_ASSETS = TOTAL_ASSETS * 1000) %>%
   mutate(UAAL = UAAL * 1000) %>%
@@ -69,7 +70,7 @@ blrs_a_2007 <- blrs_a_2007[!is.na(blrs_a_2007$CITY_OR_DISTRICT),]
 blrs_a_2007$VAL_DATE <- ymd(blrs_a_2007$VAL_DATE)
 blrs_a_2007 <- blrs_a_2007 %>% #change date format
   mutate(PLAN_YEAR_BEGINNING=as.Date(PLAN_YEAR_BEGINNING, origin="1899-12-30"), PAYMENT_BEGINNING=as.Date(PAYMENT_BEGINNING, origin="1899-12-30")) 
-blrs_a_2007$REPORT_YR <- as.numeric("2007")
+blrs_a_2007$REPORT_YR <- 2007
 blrs_a_2007 <- blrs_a_2007 %>% 
   mutate(TOTAL_ASSETS = TOTAL_ASSETS * 1000) %>%
   mutate(UAAL = UAAL * 1000) %>%
@@ -91,7 +92,7 @@ blrs_a_2008$PLAN_YEAR_BEGINNING <- as.numeric(blrs_a_2008$PLAN_YEAR_BEGINNING)
 blrs_a_2008 <- blrs_a_2008 %>% #change date format
   mutate(PLAN_YEAR_BEGINNING=as.Date(PLAN_YEAR_BEGINNING, origin="1899-12-30")) 
 blrs_a_2008$PLAN_YEAR_BEGINNING[is.na(blrs_a_2008$PLAN_YEAR_BEGINNING)] <- mdy("10-01-08") #input for missing date
-blrs_a_2008$REPORT_YR <- as.numeric("2008")
+blrs_a_2008$REPORT_YR <- 2008
 blrs_a_2008 <- blrs_a_2008 %>% 
   mutate(TOTAL_ASSETS = TOTAL_ASSETS * 1000) %>%
   mutate(UAAL = UAAL * 1000) %>%
@@ -111,7 +112,7 @@ blrs_a_2009 <- blrs_a_2009[!is.na(blrs_a_2009$CITY_OR_DISTRICT),]
 blrs_a_2009$VAL_DATE <- ymd(blrs_a_2009$VAL_DATE)
 blrs_a_2009$PLAN_YEAR_BEGINNING <- ymd(blrs_a_2009$PLAN_YEAR_BEGINNING)
 blrs_a_2009$PAYMENT_BEGINNING <- ymd(blrs_a_2009$PAYMENT_BEGINNING)
-blrs_a_2009$REPORT_YR <- as.numeric("2009")
+blrs_a_2009$REPORT_YR <- 2009
 
 
 ### 2010 data
@@ -124,11 +125,11 @@ blrs_a_2010 <- blrs_a_2010[!is.na(blrs_a_2010$CITY_OR_DISTRICT),] #remove "Grand
 blrs_a_2010$VAL_DATE <- ymd(blrs_a_2010$VAL_DATE)
 blrs_a_2010$PLAN_YEAR_BEGINNING <- ymd(blrs_a_2010$PLAN_YEAR_BEGINNING)
 blrs_a_2010$PAYMENT_BEGINNING <- ymd(blrs_a_2010$PAYMENT_BEGINNING)
-blrs_a_2010$REPORT_YR <- as.numeric("2010")
+blrs_a_2010$REPORT_YR <- 2010
 
 
-### 2011 data (For this year, I resaved xlsx file to xls file)
-blrs_a_2011 <- read_excel("2011 Report/Appendix_A.xls", 
+### 2011 data 
+blrs_a_2011 <- read_excel("2011 Report/Appendix_A.xlsx", 
                           skip = 1,
                           col_names = c("CITY_OR_DISTRICT", "TYP_SYS", "VAL_DATE",
                                         "TOTAL_ASSETS", "UAAL", "VAL_PYROLL", "RETD_PYROLL", 
@@ -141,11 +142,11 @@ blrs_a_2011 <- blrs_a_2011[!is.na(blrs_a_2011$CITY_OR_DISTRICT),]
 blrs_a_2011$VAL_DATE <- ymd(blrs_a_2011$VAL_DATE)
 blrs_a_2011$PLAN_YEAR_BEGINNING <- ymd(blrs_a_2011$PLAN_YEAR_BEGINNING)
 blrs_a_2011$PAYMENT_BEGINNING <- ymd(blrs_a_2011$PAYMENT_BEGINNING)
-blrs_a_2011$REPORT_YR <- as.numeric("2011")
+blrs_a_2011$REPORT_YR <- 2011
 
 
-### 2012 data (For this year, xlsx file saved as xls file)
-blrs_a_2012 <- read_excel("2012 Report/Appendix_A.xls", 
+### 2012 data 
+blrs_a_2012 <- read_excel("2012 Report/Appendix_A.xlsx", 
                           skip = 1,
                           col_names = c("CITY_OR_DISTRICT", "TYP_SYS", "VAL_DATE",
                                         "TOTAL_ASSETS", "UAAL", "VAL_PYROLL", "RETD_PYROLL", 
@@ -158,11 +159,11 @@ blrs_a_2012 <- blrs_a_2012[!is.na(blrs_a_2012$CITY_OR_DISTRICT),] #remove total 
 blrs_a_2012$VAL_DATE <- ymd(blrs_a_2012$VAL_DATE)
 blrs_a_2012$PLAN_YEAR_BEGINNING <- ymd(blrs_a_2012$PLAN_YEAR_BEGINNING)
 blrs_a_2012$PAYMENT_BEGINNING <- ymd(blrs_a_2012$PAYMENT_BEGINNING)
-blrs_a_2012$REPORT_YR <- as.numeric("2012")
+blrs_a_2012$REPORT_YR <- 2012
 
 
-### 2013 data (For this year, xlsx file saved as xls file)
-blrs_a_2013 <- read_excel("2013 Report/2013-04 - Appendix A - Financial Contribution Data.xls", 
+### 2013 data 
+blrs_a_2013 <- read_excel("2013 Report/2013-04 - Appendix A - Financial Contribution Data.xlsx", 
                           skip = 1,
                           col_names = c("CITY_OR_DISTRICT", "TYP_SYS", "VAL_DATE",
                                         "TOTAL_ASSETS", "UAAL", "VAL_PYROLL", "RETD_PYROLL", 
@@ -182,7 +183,7 @@ blrs_a_2013$VAL_DATE <- ymd(blrs_a_2013$VAL_DATE)
 blrs_a_2013 <- mutate_at(blrs_a_2013, vars(PLAN_YEAR_BEGINNING, PAYMENT_BEGINNING), funs(as.numeric))
 blrs_a_2013 <- blrs_a_2013 %>% #change date format
   mutate(PLAN_YEAR_BEGINNING=as.Date(PLAN_YEAR_BEGINNING, origin="1899-12-30"), PAYMENT_BEGINNING=as.Date(PAYMENT_BEGINNING, origin="1899-12-30")) 
-blrs_a_2013$REPORT_YR <- as.numeric("2013")
+blrs_a_2013$REPORT_YR <- 2013
 
 ### 2014 data
 blrs_a_2014 <- read_excel("2014 Report/2014-04 - Appendix A - Financial Contribution Data.xls")
@@ -194,7 +195,7 @@ blrs_a_2014$C_V <- NA
 blrs_a_2014$VAL_DATE <- ymd(blrs_a_2014$VAL_DATE)
 blrs_a_2014$PLAN_YEAR_BEGINNING <- ymd(blrs_a_2014$PLAN_YEAR_BEGINNING)
 blrs_a_2014$PAYMENT_BEGINNING <- ymd(blrs_a_2014$PAYMENT_BEGINNING)
-blrs_a_2014$REPORT_YR <- as.numeric("2014")
+blrs_a_2014$REPORT_YR <- 2014
 
 ### 2015 data
 blrs_a_2015 <- read_excel("2015 Report/Appendix_A.xls",
@@ -210,7 +211,7 @@ blrs_a_2015$VAL_DATE <- ymd(blrs_a_2015$VAL_DATE)
 blrs_a_2015$C_V <- NA
 blrs_a_2015$PLAN_YEAR_BEGINNING <- ymd(blrs_a_2015$PLAN_YEAR_BEGINNING)
 blrs_a_2015$PAYMENT_BEGINNING <- ymd(blrs_a_2015$PAYMENT_BEGINNING)
-blrs_a_2015$REPORT_YR <- as.numeric("2015")
+blrs_a_2015$REPORT_YR <- 2015
 
 ### 2016 data
 blrs_a_2016 <- read_excel("2016 Report/Appendix_A.xls",
@@ -226,7 +227,7 @@ blrs_a_2016$C_V <- NA
 blrs_a_2016$VAL_DATE <- ymd(blrs_a_2016$VAL_DATE)
 blrs_a_2016$PLAN_YEAR_BEGINNING <- ymd(blrs_a_2016$PLAN_YEAR_BEGINNING)
 blrs_a_2016$PAYMENT_BEGINNING <- ymd(blrs_a_2016$PAYMENT_BEGINNING)
-blrs_a_2016$REPORT_YR <- as.numeric("2016")
+blrs_a_2016$REPORT_YR <- 2016
 
 ### 2017 data
 blrs_a_2017 <- read_excel("2017 Report/Appendix_A.xls",
@@ -242,7 +243,7 @@ blrs_a_2017$C_V <- NA
 blrs_a_2017$VAL_DATE <- ymd(blrs_a_2017$VAL_DATE)
 blrs_a_2017$PLAN_YEAR_BEGINNING <- ymd(blrs_a_2017$PLAN_YEAR_BEGINNING)
 blrs_a_2017$PAYMENT_BEGINNING <- ymd(blrs_a_2017$PAYMENT_BEGINNING)
-blrs_a_2017$REPORT_YR <- as.numeric("2017")
+blrs_a_2017$REPORT_YR <- 2017
 
 
 #### Part 2. Bind each year into a single table & relabel variables

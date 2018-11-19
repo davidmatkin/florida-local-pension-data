@@ -12,7 +12,7 @@ library(lubridate)
 library(purrr)
 
 #setwd("C:/Users/David Matkin/Dropbox/Retirement_Research/Pension OPEB Data/FL_LocalPensionReports")
-setwd(("C:/Users/dsm32/Dropbox/Retirement_Research/Pension OPEB Data/FL_LocalPensionReports"))
+#setwd(("C:/Users/dsm32/Dropbox/Retirement_Research/Pension OPEB Data/FL_LocalPensionReports"))
 
 #### Part 1. Date importing and cleaning
 ### First, import excel files
@@ -36,7 +36,7 @@ blrs_e_2005$FUND_METHOD[blrs_e_2005$FUND_METHOD == "ean/"] <- "EAN"
 blrs_e_2005$FUND_METHOD[blrs_e_2005$FUND_METHOD == "PUC/"] <- "PUC" 
 blrs_e_2005$FUND_METHOD[blrs_e_2005$FUND_METHOD == "UC/"] <- "UC"
 blrs_e_2005$FUND_METHOD[blrs_e_2005$FUND_METHOD == "FIL/"] <- "FIL" 
-blrs_e_2005$REPORT_YR <- as.numeric("2005")
+blrs_e_2005$REPORT_YR <- 2005
 blrs_e_2005$TXT_MV_RETURN <- NA
 
 ## 2006 data
@@ -50,7 +50,7 @@ blrs_e_2006 <- read_excel("2006 Report/2006-07 E - Actuarial Data - 14e.xls",
 blrs_e_2006 <- blrs_e_2006[!is.na(blrs_e_2006$CITY_OR_DISTRICT),]
 blrs_e_2006$VAL_DATE <- ymd(blrs_e_2006$VAL_DATE)
 blrs_e_2006$PLNYR_ENDED <- ymd(blrs_e_2006$PLNYR_ENDED)
-blrs_e_2006$REPORT_YR <- as.numeric("2006")
+blrs_e_2006$REPORT_YR <- 2006
 blrs_e_2006$FUND_METHOD[blrs_e_2006$FUND_METHOD == "AGG/"] <- "AGG" 
 blrs_e_2006$FUND_METHOD[blrs_e_2006$FUND_METHOD == "EAN/"] <- "EAN"
 blrs_e_2006$FUND_METHOD[blrs_e_2006$FUND_METHOD == "PUC/"] <- "PUC" 
@@ -62,7 +62,7 @@ blrs_e_2007 <- read_excel("2007 Report/Appendix_E.xls", na = c("N/A", "NA", "VR"
 blrs_e_2007 <- blrs_e_2007[!is.na(blrs_e_2007$CITY_OR_DISTRICT),]
 blrs_e_2007$VAL_DATE <- ymd(blrs_e_2007$VAL_DATE)
 blrs_e_2007$PLNYR_ENDED <- ymd(blrs_e_2007$PLNYR_ENDED)
-blrs_e_2007$REPORT_YR <- as.numeric("2007")
+blrs_e_2007$REPORT_YR <- 2007
 blrs_e_2007$FUND_METHOD[blrs_e_2007$FUND_METHOD == "AGG/"] <- "AGG" 
 blrs_e_2007$FUND_METHOD[blrs_e_2007$FUND_METHOD == "EAN/"] <- "EAN"
 blrs_e_2007$FUND_METHOD[blrs_e_2007$FUND_METHOD == "PUC/"] <- "PUC" 
@@ -75,7 +75,7 @@ blrs_e_2008$INT_ASSMP[blrs_e_2008$INT_ASSMP=="8..00"] <- 8.0
 blrs_e_2008$INT_ASSMP <- as.numeric(blrs_e_2008$INT_ASSMP)
 blrs_e_2008$VAL_DATE <- ymd(blrs_e_2008$VAL_DATE)
 blrs_e_2008$PLNYR_ENDED <- ymd(blrs_e_2008$PLNYR_ENDED)
-blrs_e_2008$REPORT_YR <- as.numeric("2008")
+blrs_e_2008$REPORT_YR <- 2008
 blrs_e_2008$FUND_METHOD[blrs_e_2008$FUND_METHOD == "AGG/"] <- "AGG" 
 blrs_e_2008$FUND_METHOD[blrs_e_2008$FUND_METHOD == "EAN/"] <- "EAN"
 blrs_e_2008$FUND_METHOD[blrs_e_2008$FUND_METHOD == "PUC/"] <- "PUC" 
@@ -92,7 +92,7 @@ blrs_e_2009$RETIREMENT_AGE_ASSUMPTION_YR[blrs_e_2009$RETIREMENT_AGE_ASSUMPTION_Y
 blrs_e_2009$RETIREMENT_AGE_ASSUMPTION_YR <- as.numeric(blrs_e_2009$RETIREMENT_AGE_ASSUMPTION_YR)
 blrs_e_2009$VAL_DATE <- ymd(blrs_e_2009$VAL_DATE)
 blrs_e_2009$PLNYR_ENDED <- ymd(blrs_e_2009$PLNYR_ENDED)
-blrs_e_2009$REPORT_YR <- as.numeric("2009")
+blrs_e_2009$REPORT_YR <- 2009
 blrs_e_2009$FUND_METHOD[blrs_e_2009$FUND_METHOD == "AGG/"] <- "AGG" 
 blrs_e_2009$FUND_METHOD[blrs_e_2009$FUND_METHOD == "EAN/"] <- "EAN"
 blrs_e_2009$FUND_METHOD[blrs_e_2009$FUND_METHOD == "PUC/"] <- "PUC" 
@@ -106,7 +106,7 @@ blrs_e_2010$SALRY_ASSMP <- as.numeric(blrs_e_2010$SALRY_ASSMP)
 blrs_e_2010$RETIREMENT_AGE_ASSUMPTION_YR <- as.numeric(blrs_e_2010$RETIREMENT_AGE_ASSUMPTION_YR)
 blrs_e_2010$VAL_DATE <- ymd(blrs_e_2010$VAL_DATE)
 blrs_e_2010$PLNYR_ENDED <- ymd(blrs_e_2010$PLNYR_ENDED)
-blrs_e_2010$REPORT_YR <- as.numeric("2010")
+blrs_e_2010$REPORT_YR <- 2010
 blrs_e_2010$FUND_METHOD[blrs_e_2010$FUND_METHOD == "AGG/"] <- "AGG" 
 blrs_e_2010$FUND_METHOD[blrs_e_2010$FUND_METHOD == "EAN/"] <- "EAN"
 blrs_e_2010$FUND_METHOD[blrs_e_2010$FUND_METHOD == "PUC/"] <- "PUC" 
@@ -117,7 +117,7 @@ blrs_e_2010$FUND_METHOD[blrs_e_2010$FUND_METHOD == "F"] <- "FIL"
 blrs_e_2010$TXT_MV_RETURN <- NA
 
 ### 2011 data (For this year, I resaved xlsx file to xls file)
-blrs_e_2011 <- read_excel("2011 Report/Appendix_E.xls", 
+blrs_e_2011 <- read_excel("2011 Report/Appendix_E.xlsx", 
                           na = c("N/A", "NA", "VR", ""),
                           skip = 1,
                           col_names = c("CITY_OR_DISTRICT", "TYP_SYS", "VAL_DATE", "FUND_METHOD",
@@ -128,12 +128,12 @@ blrs_e_2011$SALRY_ASSMP <- as.numeric(blrs_e_2011$SALRY_ASSMP)
 blrs_e_2011$RETIREMENT_AGE_ASSUMPTION_YR <- as.numeric(blrs_e_2011$RETIREMENT_AGE_ASSUMPTION_YR)
 blrs_e_2011$VAL_DATE <- ymd(blrs_e_2011$VAL_DATE)
 blrs_e_2011$PLNYR_ENDED <- ymd(blrs_e_2011$PLNYR_ENDED)
-blrs_e_2011$REPORT_YR <- as.numeric("2011")
+blrs_e_2011$REPORT_YR <- 2011
 blrs_e_2011$FUND_METHOD[blrs_e_2011$FUND_METHOD == "AGG/"] <- "AGG" 
 blrs_e_2011$TXT_MV_RETURN <- NA
 
 ### 2012 data (For this year, xlsx file saved as xls file)
-blrs_e_2012 <- read_excel("2012 Report/Appendix_E.xls", 
+blrs_e_2012 <- read_excel("2012 Report/Appendix_E.xlsx", 
                           na = c("N/A", "NA", "VR", ""),
                           skip = 1,
                           col_names = c("CITY_OR_DISTRICT", "TYP_SYS", "VAL_DATE", "FUND_METHOD",
@@ -146,11 +146,11 @@ blrs_e_2012$SALRY_ASSMP <- as.numeric(blrs_e_2012$SALRY_ASSMP)
 blrs_e_2012$RETIREMENT_AGE_ASSUMPTION_YR <- as.numeric(blrs_e_2012$RETIREMENT_AGE_ASSUMPTION_YR)
 blrs_e_2012$VAL_DATE <- ymd(blrs_e_2012$VAL_DATE)
 blrs_e_2012$PLNYR_ENDED <- ymd(blrs_e_2012$PLNYR_ENDED)
-blrs_e_2012$REPORT_YR <- as.numeric("2012")
+blrs_e_2012$REPORT_YR <- 2012
 blrs_e_2012$TXT_MV_RETURN <- NA
 
 ### 2013 data (For this year, xlsx file saved as xls file)
-blrs_e_2013 <- read_excel("2013 Report/2013-09 - Appendix E - Actuarial Data.xls", 
+blrs_e_2013 <- read_excel("2013 Report/2013-09 - Appendix E - Actuarial Data.xlsx", 
                           na = c("N/A", "NA", "VR", ""),
                           skip = 1,
                           col_names = c("CITY_OR_DISTRICT", "TYP_SYS", "VAL_DATE", "FUND_METHOD",
@@ -166,7 +166,7 @@ blrs_e_2013$VAL_DATE <- ymd(blrs_e_2013$VAL_DATE)
 blrs_e_2013$PLNYR_ENDED <- as.numeric(blrs_e_2013$PLNYR_ENDED)
 blrs_e_2013 <- mutate(blrs_e_2013, PLNYR_ENDED=as.Date(PLNYR_ENDED, origin="1899-12-30")) 
 blrs_e_2013$PLNYR_ENDED <- ymd(blrs_e_2013$PLNYR_ENDED)
-blrs_e_2013$REPORT_YR <- as.numeric("2013")
+blrs_e_2013$REPORT_YR <- 2013
 blrs_e_2013$TXT_MV_RETURN <- NA
 
 ### 2014 data
@@ -181,7 +181,7 @@ blrs_e_2014$SALRY_ASSMP <- as.numeric(blrs_e_2014$SALRY_ASSMP)
 blrs_e_2014$RETIREMENT_AGE_ASSUMPTION_YR <- as.numeric(blrs_e_2014$RETIREMENT_AGE_ASSUMPTION_YR)
 blrs_e_2014$VAL_DATE <- ymd(blrs_e_2014$VAL_DATE)
 blrs_e_2014$PLNYR_ENDED <- ymd(blrs_e_2014$PLNYR_ENDED)
-blrs_e_2014$REPORT_YR <- as.numeric("2014")
+blrs_e_2014$REPORT_YR <- 2014
 blrs_e_2014$OLD_PLN <- NA
 blrs_e_2014$COMMENTS <- NA
 
@@ -197,7 +197,7 @@ blrs_e_2015$SALRY_ASSMP <- as.numeric(blrs_e_2015$SALRY_ASSMP)
 blrs_e_2015$RETIREMENT_AGE_ASSUMPTION_YR <- as.numeric(blrs_e_2015$RETIREMENT_AGE_ASSUMPTION_YR)
 blrs_e_2015$VAL_DATE <- ymd(blrs_e_2015$VAL_DATE)
 blrs_e_2015$PLNYR_ENDED <- ymd(blrs_e_2015$PLNYR_ENDED)
-blrs_e_2015$REPORT_YR <- as.numeric("2015")
+blrs_e_2015$REPORT_YR <- 2015
 blrs_e_2015$OLD_PLN <- NA
 blrs_e_2015$COMMENTS <- NA
 
@@ -211,7 +211,7 @@ blrs_e_2016 <- read_excel("2016 Report/Appendix_E.xls",
                                         "RETIREMENT_AGE_ASSUMPTION_YR", "RETIREMENT_AGE_ASSUMPTION_DESC"))
 blrs_e_2016$VAL_DATE <- ymd(blrs_e_2016$VAL_DATE)
 blrs_e_2016$PLNYR_ENDED <- ymd(blrs_e_2016$PLNYR_ENDED)
-blrs_e_2016$REPORT_YR <- as.numeric("2016")
+blrs_e_2016$REPORT_YR <- 2016
 blrs_e_2016$OLD_PLN <- NA
 blrs_e_2016$COMMENTS <- NA
 
@@ -227,7 +227,7 @@ blrs_e_2017$SALRY_ASSMP <- as.numeric(blrs_e_2017$SALRY_ASSMP)
 blrs_e_2017$RETIREMENT_AGE_ASSUMPTION_YR <- as.numeric(blrs_e_2017$RETIREMENT_AGE_ASSUMPTION_YR)
 blrs_e_2017$VAL_DATE <- ymd(blrs_e_2017$VAL_DATE)
 blrs_e_2017$PLNYR_ENDED <- ymd(blrs_e_2017$PLNYR_ENDED)
-blrs_e_2017$REPORT_YR <- as.numeric("2017")
+blrs_e_2017$REPORT_YR <- 2017
 blrs_e_2017$OLD_PLN <- NA
 blrs_e_2017$COMMENTS <- NA
 
