@@ -12,7 +12,11 @@ library(lubridate)
 library(purrr)
 
 #setwd("C:/Users/David Matkin/Dropbox/Retirement_Research/Pension OPEB Data/FL_LocalPensionReports")
-setwd(("C:/Users/dsm32/Dropbox/Retirement_Research/Pension OPEB Data/FL_LocalPensionReports"))
+#setwd(("C:/Users/dsm32/Dropbox/Retirement_Research/Pension OPEB Data/FL_LocalPensionReports"))
+
+##To get rid of all but EAN and PUC
+# only keep EAN and PUC example
+#blrs_g <- filter(blrs_g, funded_method_g == "EAN" | funded_method_g == "PUC")
 
 load("blrs_a.RData")
 load("blrs_e.RData")
@@ -48,6 +52,8 @@ blrs_f <- blrs_f %>%
   mutate(report_year_clean = report_year_f) %>%
   mutate(plan_type_clean = plan_type_f)
 
+#Left join originally, what information is lost when a left join is used instead of a full join?
+
 blrs_full_aefg <- left_join(blrs_full_aeg, blrs_f, by = c("plan_sponsor_clean", "report_year_clean", "plan_type_clean"))
 
 
@@ -58,40 +64,52 @@ save(blrs_full_aefg, file = "blrs_full_aefg.RData")
 
 ## this is a process to select out the variables for analysis (simiplify dataframes)
 
+## Adds two missing data groups plan_type_a, and val_date_a??  
+
 blrs_select_aefg <- blrs_full_aefg %>%
   select(plan_sponsor_clean, plan_type_clean, valuation_date_clean, uaal_a, val_payroll_a, reqd_contribution_a, member_percent_a, 
          interest_assumption_e, interest_av_actual_e, city_population_f, active_members_f, funded_ratio_g, 
          funded_method_e, funded_method_g, report_year_a, report_year_e, report_year_f, report_year_g, report_year_clean)
 
-## select only sponsors using EAN or PUC
 
-blrs_select_aefg <- filter(blrs_select_aefg, funded_method_e %in% c("EAN", "PUC"))
-blrs_select_aefg <- filter(blrs_select_aefg, funded_method_g %in% c("EAN", "PUC"))
-
-## select out county and special district data
-
-sponsors_remove <- c("ALACHUA COUNTY", "ALACHUA COUNTY LIBRARY", "ALACHUA COUNTY SCHOOL BOARD", 
-                     "BONITA SPRINGS FCD", "COLLIER COUNTY HOUSING AUTHORITY", "DESTIN FCD", 
-                     "EAST NAPLES FCD", "EAST NICEVILLE FCD", "ENGLEWOOD AREA FCD", 
-                     "FORT PIERCE UTILITIES", "GREATER NAPLES FCD", "HILLSBOROUGH COUNTY",
-                     "KEY WEST HOUSING", "KEY WEST UTILITIES", "KISSIMMEE UTILITY AUTHORITY",
-                     "MARTIN COUNTY", "MIAMI-DADE COUNTY", "NORTH RIVER FCD",
-                     "OCEAN CITY-WRIGHT FCD", "OKALOOSA ISLAND FCD", "ORANGE COUNTY LIBRARY",
-                     "ORLANDO AVIATION", "ORLANDO UTILITY", "PALM HARBOR FCD", "PALM TRAN, INC. (ATU-1577)",
-                     "PASCO COUNTY", "SAINT JOHNS RIVER PW PK", "SAINT LUCIE COUNTY FCD", 
-                     "SARASOTA-MANATEE A", "SARASOTA MEMORIAL HEALTH CARE", "SOUTH BROWARD HOSPITAL (aka Memorial Healthcare)",
-                     "SOUTH WALTON FCD", "TRI-COUNTY TRANSIT", "WEST MANATEE FCD")
-
-blrs_select_aefg <- blrs_select_aefg %>%
-  filter(!plan_sponsor_clean %in% sponsors_remove) 
 
 ## remove any duplicates
 
 blrs_select_aefg <- distinct(blrs_select_aefg)
 
-## measure 1
+##Remove entries that do not have required data for grading system.
 
-blrs_select_aefg <- filter(blrs_select_aefg, !is.na(funded_ratio_g))
+blrs_select_aefg <- blrs_select_aefg %>% 
+  filter(!is.na(funded_ratio_g))
+  filter(!is.na(uaal_a)) %>%
+  filter(!is.na(val_payroll_a)) %>% 
+  filter(!is.na(reqd_contribution_a)) %>%
+  filter(!is.na(interest_assumption_e)) %>%
+  filter(!is.na(member_percent_a))
+  
+## select only sponsors using EAN or PUC
+  
+blrs_select_aefg <- filter(blrs_select_aefg, funded_method_e %in% c("EAN", "PUC"))
+
+## select out county and special district data
+  
+sponsors_remove <- c("ALACHUA COUNTY", "ALACHUA COUNTY LIBRARY", "ALACHUA COUNTY SCHOOL BOARD", 
+                       "BONITA SPRINGS FCD", "COLLIER COUNTY HOUSING AUTHORITY", "DESTIN FCD", 
+                       "EAST NAPLES FCD", "EAST NICEVILLE FCD", "ENGLEWOOD AREA FCD", 
+                       "FORT PIERCE UTILITIES", "GREATER NAPLES FCD", "HILLSBOROUGH COUNTY",
+                       "KEY WEST HOUSING", "KEY WEST UTILITIES", "KISSIMMEE UTILITY AUTHORITY",
+                       "MARTIN COUNTY", "MIAMI-DADE COUNTY", "NORTH RIVER FCD",
+                       "OCEAN CITY-WRIGHT FCD", "OKALOOSA ISLAND FCD", "ORANGE COUNTY LIBRARY",
+                       "ORLANDO AVIATION", "ORLANDO UTILITY", "PALM HARBOR FCD", "PALM TRAN, INC. (ATU-1577)",
+                       "PASCO COUNTY", "SAINT JOHNS RIVER PW PK", "SAINT LUCIE COUNTY FCD", 
+                       "SARASOTA-MANATEE A", "SARASOTA MEMORIAL HEALTH CARE", "SOUTH BROWARD HOSPITAL (aka Memorial Healthcare)",
+                     
+                       "SOUTH WALTON FCD", "TRI-COUNTY TRANSIT", "WEST MANATEE FCD")
+  
+blrs_select_aefg <- blrs_select_aefg %>%
+  filter(!plan_sponsor_clean %in% sponsors_remove) 
+
+## measure 1
 
 blrs_select_aefg$m1_fr <- 0
 blrs_select_aefg$m1_fr[blrs_select_aefg$funded_ratio_g >= 60] <- 1
@@ -99,10 +117,6 @@ blrs_select_aefg$m1_fr[blrs_select_aefg$funded_ratio_g >= 80] <- 2
 blrs_select_aefg$m1_fr[blrs_select_aefg$funded_ratio_g >= 100] <- 2.5
 
 ## measure 2
-
-blrs_select_aefg <- blrs_select_aefg %>% 
-  filter(!is.na(uaal_a)) %>%
-  filter(!is.na(val_payroll_a))
 
 blrs_select_aefg$uaal_cv <- blrs_select_aefg$uaal_a/blrs_select_aefg$val_payroll_a * 100
 
@@ -112,9 +126,6 @@ blrs_select_aefg$m2_uaal[blrs_select_aefg$uaal_cv <= 100 ] <- 1.0
 
 ## measure 3
 
-blrs_select_aefg <- blrs_select_aefg %>% 
-  filter(!is.na(reqd_contribution_a))
-
 blrs_select_aefg$arc_perc <- blrs_select_aefg$reqd_contribution_a / blrs_select_aefg$val_payroll_a * 100  
 
 blrs_select_aefg$m3_arc <- 0
@@ -123,16 +134,10 @@ blrs_select_aefg$m3_arc[blrs_select_aefg$arc_perc <= 20 ] <- 1.0
 
 ## measure 4
 
-blrs_select_aefg <- blrs_select_aefg %>% 
-  filter(!is.na(interest_assumption_e))
-
 blrs_select_aefg$m4_return <- 0
 blrs_select_aefg$m4_return[blrs_select_aefg$interest_assumption_e <= 7.75 ] <- 0.5
 
 ## measure 5
-
-blrs_select_aefg <- blrs_select_aefg %>% 
-  filter(!is.na(member_percent_a))
 
 blrs_select_aefg$m5_employee_con <- 0
 blrs_select_aefg$m5_employee_con[blrs_select_aefg$member_percent_a >= 5 ] <- 0.5
